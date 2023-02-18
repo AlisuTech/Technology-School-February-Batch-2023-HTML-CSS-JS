@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML with Styles</title>
+</head>
+<style>
+/* 
+Styling based on elements
+
+CSS - Cascading Style Sheet
+
+CSS uses a Key-Value Pair approach in the language
+
+
+Elements are spaced from each other using Margin and Padding
+
+Margin is the space between two different element (usually outside a particular element)
+
+
+Padding is the internal space between the wall of an element (usually inside a particular element)
+
+Styling based on class(SBC)
+SBC only applies to elements that inherits a particular class
+
+Styling based on name or id
+*/
+h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    background-color: red;
+    text-align: center;
+    letter-spacing: 20px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    padding: 10px;
+    /* margin: 100px; */
+    /* margin-top:100px; */
+    /* margin-right:100px; */
+    /* margin-bottom:100px; */
+    /* margin-left:100px; */
+    margin: 0px 0px 100px 0px;/*Top Right Bottom Left*/
+    padding: 100px 0px 0px 100px ;
+}
+.pstyleOne{
+    font-size: 50px;
+    color:blue;
+    font-weight: bold;
+}
+
+#newelement{
+    font-size: 50px;
+    color:blue;
+    font-weight: bold;
+}
+</style>
+<body>
+    <p class="pstyleOne">Class Based P tag</p>
+    <p 
+    style="font-size: 50px;
+    color:blue;
+    font-weight: bold;">
+    Styled Paragraph</p>
+    <p>Styled Paragraph 2</p>
+    <h1 class="pstyleOne">Hello</h1>
+    <input class="pstyleOne"/>
+    <p id="newelement">Element Based on Name</p>
+</body>
+</html>
