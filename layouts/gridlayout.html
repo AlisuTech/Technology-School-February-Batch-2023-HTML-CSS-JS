@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-layout{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        color:white;
+        text-align:center
+    }
+    .move-one-to-five{
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .move-five-to-one{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .move-four-to-three{
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+    .move-nine-to-seven{
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+</style>
+<body>
+    <div class="grid-layout">
+        <div class="move-one-to-five" style="background-color: blue;width: 200px;height:200px;flex:1">1</div>
+        <div class="align-self" style="background-color: red;width: 200px;min-height:200px">2</div>
+        <div style="background-color: orange;width: 200px;height:200px">3</div>
+        <div class="move-four-to-three" style="background-color: gray;width: 200px;height:200px">4</div>
+        <div class="move-five-to-one" style="background-color: black;width: 200px;height:200px">5</div>
+        <div style="background-color: blue;width: 200px;height:200px">6</div>
+        <div style="background-color: red;width: 200px;height:200px">7</div>
+        <div style="background-color: orange;width: 200px;height:200px">8</div>
+        <div class="move-nine-to-seven" style="background-color: gray;width: 200px;height:200px">9</div>
+        <div style="background-color: black;width: 200px;height:200px">10</div>
+    </div>
+    
+</body>
+</html>

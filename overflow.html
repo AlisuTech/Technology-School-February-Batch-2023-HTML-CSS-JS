@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.overflow-div{
+    height:300px;
+    width:300px;
+    background-color: black;
+    color:red;
+    padding:10px;
+    overflow: clip;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    overflow: scroll; 
+     overflow-y:scroll ;
+    overflow-x: scroll;
+}
+.div-overflow{
+    margin:30px;
+    height:300px;
+    width: 300px;
+    overflow: scroll;
+}
+</style>
+<body>
+    <div class="overflow-div">
+        <p style="width:350px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium est reiciendis, ea corporis sapiente harum, eaque aliquam quisquam tempore suscipit at pariatur assumenda rem delectus provident quasi quos eveniet aperiam</p>
+    </div>
+
+    <div class="div-overflow">
+        <div style="background-color: blue;padding: 20px;grid-row-start: 1;grid-row-end: 3;width: 100%;">1</div>
+        <div style="background-color: red;padding: 20px;">2</div>
+        <div style="background-color: orange;padding: 20px;">3</div>
+        <div  style="background-color: gray;padding: 20px;grid-row-start: 2;grid-row-end: 5;">4</div>
+        <div style="background-color: black;padding: 20px;width: 100%;">5</div>
+        <div style="background-color: blue;padding: 20px;">6</div>
+        <div style="background-color: red;padding: 20px;">7</div>
+        <div style="background-color: orange;padding: 20px;width: 100%;">8</div>
+        <div  style="background-color: gray;padding: 20px;">9</div>
+        <div style="background-color: black;padding: 20px;">10</div>
+    </div>
+</body>
+</html>

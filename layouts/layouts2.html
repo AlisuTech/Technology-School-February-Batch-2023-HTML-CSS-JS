@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouting</title>
+</head>
+<style>
+    /* 
+    
+    
+        Layouting
+
+            1. Block Layout
+            2. Flex Layout {Horizontal & Vertical}
+            3. Grid Layout
+            4. Absolute/Overlay
+            5. Relative
+            6. Sticky
+    
+    
+    */
+    .flex-layout{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: flex-start;
+        justify-content: center;
+        justify-content: flex-start;
+        /* justify-content: space-between;
+        justify-content: space-around; */
+        flex-flow: row wrap;
+        margin-top:10px ;
+        align-items: flex-start;
+    }
+    .align-self{
+        align-self: flex-end;
+    }
+</style>
+<body>
+    <div class="flex-layout">
+        <p>Hello</p>
+        <p style="flex:1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ut esse earum aspernatur voluptatum voluptatibus ab, laboriosam rerum optio sunt, amet ducimus. Nesciunt nemo praesentium, dignissimos quibusdam expedita ex! Enim.</p>
+    </div>
+    <div class="flex-layout">
+        <div style="background-color: blue;width: 200px;height:200px;flex:1"></div>
+        <div class="align-self" style="background-color: red;width: 100px;min-height:100px"></div>
+        <div style="background-color: orange;width: 200px;height:200px"></div>
+        <div style="background-color: gray;width: 200px;height:200px"></div>
+        <div style="background-color: black;width: 200px;height:200px"></div>
+        <div style="background-color: blue;width: 200px;height:200px"></div>
+        <div style="background-color: red;width: 100px;height:100px"></div>
+        <div style="background-color: orange;width: 200px;height:200px"></div>
+        <div style="background-color: gray;width: 100px;height:100px"></div>
+        <div style="background-color: black;width: 200px;height:200px"></div>
+    </div>
+</body>
+</html>
