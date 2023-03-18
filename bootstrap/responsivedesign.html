@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+</head>
+<style>
+    .text-center {
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .flex-item {
+        width: 200px;
+    }
+/* Small Phone Screen Size */
+    @media only screen and (max-width: 425px) {
+        .grid {
+            display: block
+        }
+    }
+/* Big Phone Screen Size */
+    @media only screen and (max-width: 600px) {
+        .grid {
+            display: block
+        }
+    }
+/* Tab Screen Size */
+    @media only screen and (max-width: 1200px) {
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <h1 class="text-center">The Page Header</h1>
+        <h3 class="text-center">The Page Content</h3>
+        <div class="grid">
+            <div>
+                <h2>Header One</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt quisquam molestiae placeat
+                    at quibusdam odit numquam recusandae, sed voluptatem distinctio possimus veritatis cumque.
+                    Dignissimos beatae dolor tenetur molestiae earum?</p>
+            </div>
+            <div>
+                <h2>Header One</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt quisquam molestiae placeat
+                    at quibusdam odit numquam recusandae, sed voluptatem distinctio possimus veritatis cumque.
+                    Dignissimos beatae dolor tenetur molestiae earum?</p>
+            </div>
+            <div>
+                <h2>Header One</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt quisquam molestiae placeat
+                    at quibusdam odit numquam recusandae, sed voluptatem distinctio possimus veritatis cumque.
+                    Dignissimos beatae dolor tenetur molestiae earum?</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="text-center">The Page Header</h1>
+        <h3 class="text-center">The Page Content</h3>
+        <div class="flex">
+            <div class="flex-item">
+                <h2>Header One</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt quisquam molestiae placeat
+                    at quibusdam odit numquam recusandae, sed voluptatem distinctio possimus veritatis cumque.
+                    Dignissimos beatae dolor tenetur molestiae earum?</p>
+            </div>
+            <div class="flex-item">
+                <h2>Header One</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt quisquam molestiae placeat
+                    at quibusdam odit numquam recusandae, sed voluptatem distinctio possimus veritatis cumque.
+                    Dignissimos beatae dolor tenetur molestiae earum?</p>
+            </div>
+            <div class="flex-item">
+                <h2>Header One</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt quisquam molestiae placeat
+                    at quibusdam odit numquam recusandae, sed voluptatem distinctio possimus veritatis cumque.
+                    Dignissimos beatae dolor tenetur molestiae earum?</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

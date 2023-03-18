@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Transforms</title>
+</head>
+<style>
+    /* Translate - To Move */
+    .translate{
+        transform: translate(10px, 50px);
+    }
+    .translate-y{
+        transform: translateY(50px);
+    }
+    .translate-x{
+        transform: translateX(30px);
+    }
+    .translate-move{
+        transform: translate(10px, 200px);
+    }
+    .rotate{
+        transform: rotate(45deg);
+    }
+    .scale-by-percent{
+        transform: scale(0.5,0.5);
+    }
+    .scale-by-factor{
+        transform: scale(2,2);
+    }
+    .scale-by-x{
+        transform: ScaleX(1.6);
+    }
+    .scale-by-y{
+        transform: ScaleY(1.6);
+    }
+</style>
+<body>
+    <div>
+        <div class="translate">Translated Position</div>
+        <!-- <div>Original Position</div> -->
+    </div>
+    <div>
+        <div class="translate-x">Translated X Position</div>
+        <!-- <div>Original Position</div> -->
+    </div>
+    
+    <div class="translate-move">
+        <div class="rotate">Rotated Position</div>
+        <div>Original Position</div>
+    </div>
+    
+    <div class="scale-by-percent" style="background-color: red;">
+        <div>Original Position</div>
+    </div>
+    <div class="scale-by-factor" style="background-color: red;">
+        <div>Original Position</div>
+    </div>
+    <div class="scale-by-x" style="background-color: blue;">
+        <div>Original Position</div>
+    </div>
+</body>
+</html>

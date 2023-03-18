@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+</head>
+<style>
+    .button-style{
+        border-radius: 10px;
+        background-color: blue;
+        color:white;
+        padding: 10px;
+        width:100px;
+        margin: 10px;
+        text-align: center;
+        transition: transform 2s;
+    }
+    .button-style:hover{
+        transform: translateY(40px) rotate(30deg);
+    }
+    .transition{
+        width: 50px;
+        height:50px;
+        background-color: red;
+        transition: width 2s linear 0s;
+        margin:10px
+    }
+    .transition:hover{
+        width:100px
+    }
+    .transition-function-ease-in{
+        transition-timing-function: ease-in;
+
+    }
+    .transition-function-ease-out{
+        transition-timing-function: ease-out;
+        
+    }
+    .transition-function-ease-in-out{
+        transition-timing-function: ease-in-out;
+        
+    }
+    .transition-function-Linear{
+        transition-timing-function: linear;
+        transition-delay: 2s;
+    }
+    .imgStyle{
+        width:40%;
+        margin-right:auto;
+        margin-left:auto;
+        display:block;
+        opacity: 0.5;
+        transition: opacity 2s, width 2s;
+    }
+    .imgStyle:hover{
+        opacity: 1;
+        width:50%
+    }
+    /* 
+        Ease In Out
+        Ease In
+        Ease Out
+        Linear
+    */
+</style>
+<body>
+    <div class="button-style">
+        Hello World
+    </div>
+    <div class="transition">Linear</div>
+    <div class="transition transition-function-ease-in">Ease In</div>
+    <div class="transition transition-function-ease-out">Ease Out</div>
+    <div class="transition transition-function-ease-in-out">Ease In Out</div>
+    <div>
+        <img class="imgStyle" src="../assets/techorigin-tsch.jpg" />
+    </div>
+    
+</body>
+</html>

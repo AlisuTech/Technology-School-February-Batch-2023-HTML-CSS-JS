@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    div{
+        margin:5px
+    }
+</style>
+
+<body>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">List of Cars</button>
+        <div class="dropdown-menu">
+            <p>Camry</p>
+            <p>Avalon</p>
+            <p>Lexus</p>
+            <li class="divider"></li>
+            <p>Tesla</p>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">List of Cars</button>
+        <ul class="dropdown-menu">
+            <li class="disabled"><a href="#">Camry</a></li>
+            <li ><a href="#">Avalon</a></li>
+            <li ><a href="#">Lexus</a></li>
+            <li ><a href="#">Honda</a></li>
+        </ul>
+    </div>
+    <div class="dropup">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">List of Cars</button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li class="disabled"><a href="#">Camry</a></li>
+            <li ><a href="#">Avalon</a></li>
+            <li ><a href="#">Lexus</a></li>
+            <li ><a href="#">Honda</a></li>
+        </ul>
+    </div>
+</body>
+</html>
