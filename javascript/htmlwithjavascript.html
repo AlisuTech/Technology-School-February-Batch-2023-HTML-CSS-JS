@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Outputting Files in JavaScript
+
+    1. Using HTML
+    2. Console
+    3. Alerts
+    
+
+    >>> document
+        >>> getElementById
+        >>> getElementByClassName
+
+    Data Processing
+
+    Variables - Data Containers
+        - Numeric Data Type
+            - Integers - Whole Numbers (1,2,3,4) - Numbers without Decimal Places
+            - Doubles/Floats - Decimal Numbers (Currency) - 50.1, 60.999,3.142
+        - Non Numeric Data Type
+            - String/Text - Information or Names that are not numeric
+            - Boolean - True/False (Logical Data)
+        - List or Enumerables - Helps to multiple items
+
+        Variable Operators
+            -Assignment Operator '='
+            -Addition Operator '+'
+            -Subtraction Oerator '-'
+            -Multiplication Operator '*'
+            -Division Operator '/'
+            -Bracket Operator '()',
+            -Exponentiation Operator '**' - Raise to Power 2**2 == 2 raise power 2
+            -Modulus Operator '%' - Helps to remainder of a division
+            -Increment '++' -Increases a  variable by 1
+            -Decrement '--' -Decreases a variable by 1
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML With JS</title>
+    <script>
+        // function injectHTMLContent(){
+        //     document.getElementById('hellotag').innerHTML='New Hello Content'
+        //     console.log("New Hello Content")
+        //     alert("New Hello Content")
+        // }
+        function TestFunction(){
+            let firstVariable=2
+            const constantVariable=9
+            var additionOperation=firstVariable+constantVariable //11
+            console.log(additionOperation)
+            var subtractionOperation=firstVariable-constantVariable//-7
+            console.log(subtractionOperation)
+            var divisionOperation=constantVariable/firstVariable//4.5
+            console.log(divisionOperation)
+            var exponentVariable=firstVariable**constantVariable//
+            console.log(exponentVariable)
+            var modulusOperator=constantVariable%firstVariable//1 -9/2 4 1/2
+            console.log(modulusOperator)
+            console.log("=======")
+            firstVariable++//3
+            console.log(firstVariable)
+            firstVariable--//2
+            console.log(firstVariable)
+        }
+
+        function changeAnHTML() {
+            document.getElementById('hellotag').innerHTML =
+                "<h1>Hello you have been changed</h1><p>I added a new P tag</p>"
+            document.getElementById('hitag')
+        }
+        
+        function showImage(){
+            document.getElementById('imgsrc').src="../assets/reminder.png"
+        }
+        
+        function hideImage(){
+            document.getElementById('imgsrc').src=""
+        }
+
+        function increaseImageDimension(){
+            document.getElementById('imgsrc').style="width:800px"
+        }
+
+        function decreaseImageDimension(){
+            document.getElementById('imgsrc').style="width:500px"
+        }
+        
+    </script>
+</head>
+<body>
+    <button onclick="TestFunction()">Process Data</button>
+    <div id="hellotag" style="color:red">Hello World</div>
+    <p id="hitag" style="color:green">Hi</p>
+    <button onclick="changeAnHTML()">Display P Tag</button>
+    <button>Remove P Tag</button>
+
+    <div style="display:flex;margin-top:10px">
+        <button onclick="showImage()">Show Image</button>
+        <Img id="imgsrc" style="width:500px"/>
+        <button onclick="hideImage()">Hide Image</button>
+    </div>
+    <button onclick="increaseImageDimension()">Increase</button>
+    <button onclick="decreaseImageDimension()">Decrease</button>
+</body>
+
+</html>
