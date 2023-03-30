@@ -34,6 +34,8 @@
             -Modulus Operator '%' - Helps to remainder of a division
             -Increment '++' -Increases a  variable by 1
             -Decrement '--' -Decreases a variable by 1
+            
+            
 -->
 
 <head>
@@ -47,24 +49,188 @@
         //     console.log("New Hello Content")
         //     alert("New Hello Content")
         // }
-        function TestFunction(){
-            let firstVariable=2
-            const constantVariable=9
-            var additionOperation=firstVariable+constantVariable //11
+        function TestFunction() {
+            let firstVariable = 2
+            const constantVariable = 9
+            var additionOperation = firstVariable + constantVariable //11
             console.log(additionOperation)
-            var subtractionOperation=firstVariable-constantVariable//-7
+            var subtractionOperation = firstVariable - constantVariable//-7
             console.log(subtractionOperation)
-            var divisionOperation=constantVariable/firstVariable//4.5
+            var divisionOperation = constantVariable / firstVariable//4.5
             console.log(divisionOperation)
-            var exponentVariable=firstVariable**constantVariable//
+            var exponentVariable = firstVariable ** constantVariable//
             console.log(exponentVariable)
-            var modulusOperator=constantVariable%firstVariable//1 -9/2 4 1/2
+            var modulusOperator = constantVariable % firstVariable//1 -9/2 4 1/2
             console.log(modulusOperator)
             console.log("=======")
             firstVariable++//3
             console.log(firstVariable)
             firstVariable--//2
             console.log(firstVariable)
+
+            let name_one="Oniro"
+            let name_two="Ayuwo"
+            let name_three="Oburoh"
+            let fullname=name_one +" "+name_two+" "+name_three // Oniro Ayuwo Oburoh
+        }
+        //X2-2X+1
+        function calcQuadraticValue() {
+            const b = equalTo2()
+            const a = 1
+            const c = 1
+            const raisePower=pow(b,2)
+            var x = -b + sqrt(raisePower - 4 * a * c) / (2 * a)
+            console.log("Square root of 9 is ",sqrt(9))
+            console.log(x)
+        }
+        function newQuadratic(){
+            // x2-5x+6 = 0.
+            //3x2 + 6x + 2 = 0
+            calcQuad(1,-5,6)
+            calcQuad(3,6,2)
+        }
+        function calcQuad(a,b,c){
+            var x1 = (-b + sqrt(pow(b,2) - 4 * a * c)) / (2 * a)
+            console.log("x1= "+x1)
+            var x2 = (-b - sqrt(pow(b,2) - 4 * a * c)) / (2 * a)
+            console.log("x2= "+x2)
+        }
+        
+        function pow(number, power){
+            return number**power
+        }
+        function sqrt(number){
+            return number**(1/2)
+        }
+        function equalTo2(){
+            return -2
+        }
+
+        function assignmentOperators() {
+            let value_one = 10
+            let value_two = 20
+            value_one += 3// value_one=value_one+3 -- Increment Operator
+            value_one -= 3// value_one=value_one-3 
+            value_one *= 3// value_one=value_one*3 
+            value_one /= 3// value_one=value_one/3 
+            value_one %= 3// value_one=value_one%3 
+            value_one **= 3// value_one=value_one**3 
+        }
+
+        function conditionalOperators() {
+            // == - Equality operator
+            // >  - Greater Than operator
+            // <  - Less Than operator
+            // !  - Not or Inverse
+            // != - Not Equal <>
+            // >= - Greater Than Or Equal To
+            // <= - Less Than or Equal to
+
+            // Conditional Operators - True or False
+
+            let a = 10
+            let b = 20
+            let c = 30
+
+            console.log(a < b) // True
+            console.log(a == b) //False
+            console.log(!(a == b)) //True
+            console.log(a >= b) //False
+            console.log(a <= b) //True
+            console.log("=========================")
+            // Conditional Joining Operators
+            //  - Mutually Exclusive / Or  - Any Valid Condition -        "or" == '||'
+            //  - Mutually Inclusive / And - All Condition must be met  - "and" == "&&"
+
+            console.log(a > b && c < b) // False
+            console.log(a < b && c > b) // True
+            console.log(a < b || c < b) // True
+
+
+        }
+
+        function conditionalStatement() {
+            let name = "Oniro"// 'Oniro'
+            let age = 15
+            let gender = "Female"
+            console.log(age > 18 && gender == "Female") // True
+            console.log(age > 18 && gender == "Male") // False
+
+            if (age > 18 && gender == "Male") {
+                console.log("Hello Oniro you are an Adult Male")
+            }
+            else if (age > 18 && gender == "Female") {
+                console.log("Hello Oniro you are an Adult Female")
+            }
+            else {
+                console.log("Hello Oniro you are a child")
+            }
+
+            let score = 20
+
+            if (score >= 70) {
+                console.log("A")
+            }
+            else if (score >= 60 && score <= 69) {
+                console.log("B")
+            }
+            else if (score >= 50 && score <= 59) {
+                console.log("C")
+            }
+            else if (score >= 45 && score <= 49) {
+                console.log("D")
+            }
+            else if (score >= 40 && score <= 44) {
+                console.log("E")
+            }
+            else {
+                console.log("F")
+            }
+
+
+            let costOfProduct = 900
+            let numberOfProduct = 8
+            // If cost >500 & numberOf Product >10 - discount 10%
+            // If cost <500  - discount 2%
+
+            //Nested Conditional Statements
+
+            if (costOfProduct > 500) {
+                if (numberOfProduct > 10) {
+                    console.log("Discount of 10%")
+                }
+                else {
+                    console.log("Discount of 2%")
+                }
+            }
+            else {
+                console.log("Discount of 2%")
+            }
+
+            // score - A (70 -100), B(60 -69) , C(50 - 59), D(45 - 59), E(40 - 44), F < 40
+        }
+
+        function itertiveStatements(){
+            // lcv - Loop Control Variabe
+            // for (let lcv = 1; lcv<=100; lcv++){
+            //     if(lcv%2==0){
+            //         console.log(lcv)
+            //     }
+            // }
+            // let numberBase=2
+            // for (let lcv = 1; lcv<=100; lcv++){
+            //     console.log(numberBase*lcv)
+            // }
+
+            
+            for (let number_base = 2; number_base<=12; number_base++){
+                for (let lcv = 1; lcv<=12; lcv++){
+                    let printLog=number_base +" * "+lcv+" = "+(number_base*lcv)
+                    console.log(printLog)
+                }
+            }
+
+
         }
 
         function changeAnHTML() {
@@ -72,27 +238,58 @@
                 "<h1>Hello you have been changed</h1><p>I added a new P tag</p>"
             document.getElementById('hitag')
         }
-        
-        function showImage(){
-            document.getElementById('imgsrc').src="../assets/reminder.png"
-        }
-        
-        function hideImage(){
-            document.getElementById('imgsrc').src=""
+
+        function showImage() {
+            document.getElementById('imgsrc').src = "../assets/reminder.png"
         }
 
-        function increaseImageDimension(){
-            document.getElementById('imgsrc').style="width:800px"
+        function hideImage() {
+            document.getElementById('imgsrc').src = ""
         }
 
-        function decreaseImageDimension(){
-            document.getElementById('imgsrc').style="width:500px"
+        function increaseImageDimension() {
+            document.getElementById('imgsrc').style = "width:800px"
         }
-        
+
+        function decreaseImageDimension() {
+            document.getElementById('imgsrc').style = "width:500px"
+        }
+
+        function inbuiltFunctions(){
+            let name="Technology School"
+            // console.log(name.length)//
+
+            // console.log(name[0])
+            // console.log(name[2]) //c
+            // console.log(name[6]) //l
+
+            // for (let lcv=0; lcv<name.length; lcv++){
+            //     console.log(name[lcv])
+            // }
+
+
+            // slice, substring, substr
+            let slice=name.slice(0,5)
+            console.log(slice)
+
+            slice=name.substring(11,17)
+            console.log(slice)
+
+            slice=name.substr(6,10)
+            console.log(slice)
+            
+            slice=name.slice(-5)
+            console.log(slice)
+
+            slice=name.slice(-6)
+            console.log(slice)
+            
+        }
     </script>
 </head>
+
 <body>
-    <button onclick="TestFunction()">Process Data</button>
+    <button onclick="inbuiltFunctions()">Process Data</button>
     <div id="hellotag" style="color:red">Hello World</div>
     <p id="hitag" style="color:green">Hi</p>
     <button onclick="changeAnHTML()">Display P Tag</button>
@@ -100,7 +297,7 @@
 
     <div style="display:flex;margin-top:10px">
         <button onclick="showImage()">Show Image</button>
-        <Img id="imgsrc" style="width:500px"/>
+        <Img id="imgsrc" style="width:500px" />
         <button onclick="hideImage()">Hide Image</button>
     </div>
     <button onclick="increaseImageDimension()">Increase</button>
