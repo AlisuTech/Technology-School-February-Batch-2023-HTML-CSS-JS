@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script>
+        function moveBackward(){
+            document.getElementById("divtranslate").style.transform="translateX(0px)"
+        }
+        function moveForward(){
+            document.getElementById("divtranslate").style.transform="translateX(300px)"
+            
+        }
+        function changeToBlack(){
+            document.getElementById("divcolor").style="background-color:black"
+        }
+        function changeToBlue(){
+            document.getElementById("divcolor").style="background-color:blue"
+        }
+        function changeToOrange(){
+            document.getElementById("divcolor").style="background-color:orange"
+        }
+        function changeToRed(){
+            document.getElementById("divcolor").style="background-color:red"
+        }
+        function changeToGreen(){
+            document.getElementById("divcolor").style="background-color:green"
+        }
+        function ShowAlert(){
+            alert("Hello from TechOrigin")
+        }
+        function functionForX(){
+            let y=10
+            let r=15;
+            let X=20*y*r+5*3.142*y*(r**2)
+            console.log(X)
+        }
+        function skipOddNumbers(){
+            for (let lcv = 1; lcv <= 100; lcv++) {
+                if(lcv%2==0){
+                    console.log(lcv)
+                }
+            }
+        }
+        function multipleOfFive(){
+            for (let lcv = 1; lcv <= 100; lcv++) {
+                if(lcv%5==0){
+                    console.log(lcv)
+                }
+            }
+
+        }
+        function ageCalculator(){
+            let age=102
+            if(age>=100 && age<=199){
+                console.log("You are a Centenarian")
+            }
+            else if(age>=80 && age<=89){
+                console.log("You are a Octogenarian")
+            }
+            else if(age>=70){
+                console.log("You are a Aged")
+            }
+            else if(age>=18){
+                console.log("You are an Adult")
+            }
+            else if(age>=13){
+                console.log("You are an Teenager")
+            }
+            else if(age>=9){
+                console.log("You are an Adolescent")
+            }
+            else{
+                console.log("You are an Child")
+            }
+        }
+        
+        function ageCalculatorWithHtml(){
+            let age=document.getElementById("inputage").value
+            if(age>=100 && age<=199){
+                console.log("You are a Centenarian")
+            }
+            else if(age>=80 && age<=89){
+                console.log("You are an Octogenarian")
+            }
+            else if(age>=70){
+                console.log("You are a Aged")
+            }
+            else if(age>=18){
+                console.log("You are an Adult")
+            }
+            else if(age>=13){
+                console.log("You are a Teenager")
+            }
+            else if(age>=9){
+                console.log("You are an Adolescent")
+            }
+            else{
+                console.log("You are a Child")
+            }
+        }
+        function addValues(){
+            let valOne=document.getElementById("valOne").value
+            let valTwo=document.getElementById("valTwo").value
+            console.log(Number(valOne)+Number(valTwo));
+            document.getElementById("calcValue").innerText=Number(valOne)+Number(valTwo)
+            
+        }
+        function subtractValues(){
+            let valOne=document.getElementById("valOne").value
+            let valTwo=document.getElementById("valTwo").value
+            console.log(valOne-valTwo);
+            document.getElementById("calcValue").innerText=valOne-valTwo
+            
+        }
+        function multiplyValues(){
+            let valOne=document.getElementById("valOne").value
+            let valTwo=document.getElementById("valTwo").value
+            console.log(valOne*valTwo);
+            document.getElementById("calcValue").innerText=valOne*valTwo
+            
+        }
+        function divideValues(){
+            let valOne=document.getElementById("valOne").value
+            let valTwo=document.getElementById("valTwo").value
+            console.log(valOne/valTwo);
+            document.getElementById("calcValue").innerText=valOne/valTwo
+            
+        }
+        function raiseValues(){
+            let valOne=document.getElementById("valOne").value
+            let valTwo=document.getElementById("valTwo").value
+            console.log(valOne**valTwo);
+            document.getElementById("calcValue").innerText=valOne**valTwo
+        }
+    </script>
+</head>
+<style>
+    .div-container{
+        padding:50px;
+        background-color: red;
+        width:200px
+    }
+</style>
+<body>
+    <div>
+        <h3>Assignment One</h3>
+        <div id="divtranslate" class="div-container"></div>
+        <div>
+            <button onclick="moveBackward()">Left</button>
+            <button onclick="moveForward()">Right</button>
+        </div>
+
+        <br>
+        <br>
+        
+        <h3>Assignment Two</h3>
+        <div id="divcolor" class="div-container"></div>
+        <div>
+            <button onclick="changeToBlack()">Black</button>
+            <button onclick="changeToBlue()">Blue</button>
+            <button onclick="changeToRed()">Red</button>
+            <button onclick="changeToOrange()">Orange</button>
+            <button onclick="changeToGreen()">Green</button>
+        </div>
+
+        <br>
+        <br>
+        <h3>Assignment Three</h3>
+        <button onclick="ShowAlert()">Alert Button</button>
+
+        <br>
+        <br>
+        <h3>Assignment Four</h3>
+        <button onclick="functionForX()">Calculate X</button>
+        <br>
+        <br>
+        <h3>Assignment Five</h3>
+        <button onclick="skipOddNumbers()">Skip Odd Numbers</button>
+        <br>
+        <br>
+        <h3>Assignment Six</h3>
+        <button onclick="multipleOfFive()">Multiple of Five</button>
+        <br>
+        <br>
+        <h3>Assignment Seven</h3>
+        <button onclick="ageCalculator()">Check For Age Group</button>
+        <br>
+        <br>
+        <h3>Class Examples</h3>
+        <input id="inputage" placeholder="Enter Age"/>
+        <button onclick="ageCalculatorWithHtml()">Check For Age Group (Exp)</button>
+        <br>
+        <br>
+        <div>
+            <input id="valOne" placeholder="Value One"/>
+            <input id="valTwo" placeholder="Value Two"/>
+            <div>
+                <button onclick="addValues()">Add</button>
+                <button onclick="subtractValues()">Subtract</button>
+                <button onclick="multiplyValues()">Multiply</button>
+                <button onclick="divideValues()">Divide</button>
+                <button onclick="raiseValues()">Raise To Power</button>
+            </div>
+            <div id="calcValue" style="font-size: larger;font-weight: 700px;"></div>
+        </div>
+    </div>
+</body>
+</html>

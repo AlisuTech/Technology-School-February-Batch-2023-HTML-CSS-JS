@@ -1,0 +1,17 @@
+{
+    "fullname":"Joy Chidinma",
+    "age":22,
+    "isFemale":true,
+    "address":"Port Harcourt",
+    "schoolDetails":{
+        "name":"Uni Port",
+        "address":"Choba",
+        "postalCode":500272,
+        "viceChancellor":{
+            "name":"-",
+            "address":"University Park",
+            "sog":"Rivers"
+        },
+        "faculties":["Engineering","Law","Medicine","Pharmacy","Management"]
+    }
+}
